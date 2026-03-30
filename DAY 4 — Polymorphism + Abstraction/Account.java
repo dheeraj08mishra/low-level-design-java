@@ -49,6 +49,10 @@ public abstract class Account {
         }
     }
 
+    protected void updateBalance(double amount) {
+        balance += amount;
+    }
+
     protected boolean hasSufficientBalance(double amount) {
         return balance >= amount;
     }
